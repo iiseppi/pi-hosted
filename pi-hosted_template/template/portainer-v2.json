@@ -31,11 +31,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/AdguardHome/config",
+					"bind": "/share/Container/AdguardHome/config",
 					"container": "/opt/adguardhome/conf"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/AdguardHome/work",
+					"bind": "/share/Container/AdguardHome/work",
 					"container": "/opt/adguardhome/work"
 				}
 			],
@@ -62,8 +62,8 @@
 				{
 					"name": "TZ",
 					"label": "TZ",
-					"default": "America/New_York",
-					"description": "Specify a timezone to use for example America/New_York"
+					"default": "Europe/Helsinki",
+					"description": "Specify a timezone to use for example Europe/Helsinki"
 				},
 				{
 					"name": "CONFIGFILE",
@@ -85,7 +85,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/adguardhome-sync/config",
+					"bind": "/share/Container/adguardhome-sync/config",
 					"container": "/config"
 				}
 			],
@@ -108,7 +108,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -135,23 +135,23 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Music",
+					"bind": "/share/mediat/Music",
 					"container": "/music"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Airsonic/Playlists",
+					"bind": "/share/Container/Airsonic/Playlists",
 					"container": "/playlists"
 				},
 				{
-					"bind": "/portainer/Podcasts",
+					"bind": "/share/mediat/podcast",
 					"container": "/podcasts"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Airsonic/Media",
+					"bind": "/share/Container/Airsonic/Media",
 					"container": "/media"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Airsonic/config/",
+					"bind": "/share/Container/Airsonic/config/",
 					"container": "/config"
 				}
 			],
@@ -188,7 +188,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/apache-httpd",
+					"bind": "/share/Container/apache-httpd",
 					"container": "/usr/local/apache2/htdocs/"
 				}
 			],
@@ -225,15 +225,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/config",
+					"bind": "/share/Container/ArchiSteamFarm/config",
 					"container": "/app/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/plugins",
+					"bind": "/share/Container/ArchiSteamFarm/plugins",
 					"container": "/app/plugins"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/logs",
+					"bind": "/share/Container/ArchiSteamFarm/logs",
 					"container": "/app/logs"
 				}
 			],
@@ -285,7 +285,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/archivebox",
+					"bind": "/share/Container/archivebox",
 					"container": "/data"
 				}
 			]
@@ -324,11 +324,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/AriaNG",
+					"bind": "/share/Container/AriaNG",
 					"container": "/aria2/conf"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/aria2/data"
 				}
 			],
@@ -343,7 +343,7 @@
 			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
 			"env": [
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -361,7 +361,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Authelia",
+					"bind": "/share/Container/Authelia",
 					"container": "/etc/authelia/"
 				}
 			]
@@ -384,7 +384,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -401,15 +401,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Bazarr",
+					"bind": "/share/Container/Bazarr",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/tv"
 				},
 				{
-					"bind": "/portainer/Movies",
+					"bind": "/share/mediat/Movies",
 					"container": "/movies"
 				}
 			],
@@ -444,15 +444,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Beets",
+					"bind": "/share/Container/Beets",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/Music",
+					"bind": "/share/mediat/Music",
 					"container": "/music"
 				}
 			],
@@ -501,7 +501,7 @@
 					"container": "/podcast"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Booksonic",
+					"bind": "/share/Container/Booksonic",
 					"container": "/config"
 				}
 			],
@@ -524,7 +524,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -581,15 +581,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Caddy/Data",
+					"bind": "/share/Container/Caddy/Data",
 					"container": "/data"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Caddy/Config",
+					"bind": "/share/Container/Caddy/Config",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Caddy/Caddyfile",
+					"bind": "/share/Container/Caddy/Caddyfile",
 					"container": "/etc/caddy/Caddyfile"
 				}
 			]
@@ -628,7 +628,7 @@
 					"container": "/books"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Calibre-web",
+					"bind": "/share/Container/Calibre-web",
 					"container": "/config"
 				}
 			],
@@ -663,7 +663,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Cardigann",
+					"bind": "/share/Container/Cardigann",
 					"container": "/config"
 				}
 			],
@@ -821,7 +821,7 @@
 					"name": "GUID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -851,7 +851,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Code-Server",
+					"bind": "/share/Container/Code-Server",
 					"container": "/config"
 				}
 			],
@@ -886,7 +886,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Codiad",
+					"bind": "/share/Container/Codiad",
 					"container": "/config"
 				}
 			],
@@ -926,7 +926,7 @@
 					"container": "/books"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Cops",
+					"bind": "/share/Container/Cops",
 					"container": "/config"
 				}
 			],
@@ -962,15 +962,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Couchpotato",
+					"bind": "/share/Container/Couchpotato",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/Movies",
+					"bind": "/share/mediat/Movies",
 					"container": "/movies"
 				}
 			],
@@ -1005,11 +1005,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Daapd",
+					"bind": "/share/Container/Daapd",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Music",
+					"bind": "/share/mediat/Music",
 					"container": "/music"
 				}
 			],
@@ -1033,7 +1033,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Dashmachine",
+					"bind": "/share/Container/Dashmachine",
 					"container": "/dashmachine/dashmachine/user_data"
 				}
 			],
@@ -1068,7 +1068,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Dashy/local-conf.yml",
+					"bind": "/share/Container/Dashy/local-conf.yml",
 					"container": "/app/public/conf.yml"
 				}
 			],
@@ -1105,11 +1105,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Davos",
+					"bind": "/share/Container/Davos",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -1134,11 +1134,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/DeeMix",
+					"bind": "/share/Container/DeeMix",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			]
@@ -1178,11 +1178,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Deluge",
+					"bind": "/share/Container/Deluge",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -1220,7 +1220,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Domoticz",
+					"bind": "/share/Container/Domoticz",
 					"container": "/config"
 				}
 			],
@@ -1287,7 +1287,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -1352,7 +1352,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1399,7 +1399,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Duplicati",
+					"bind": "/share/Container/Duplicati",
 					"container": "/config"
 				},
 				{
@@ -1419,7 +1419,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol.\r\nYou will need to create /portainer/Files/AppData/Config/Mosquitto/config/mosquitto.conf and if needed your password file.\r\nHave a look on https://mosquitto.org/man/mosquitto_passwd-1.html",
+			"description": "Eclipse Mosquitto is an open source implementation of a server for versions 5, 3.1.1, and 3.1 of the MQTT protocol.\r\nYou will need to create /share/Container/Mosquitto/config/mosquitto.conf and if needed your password file.\r\nHave a look on https://mosquitto.org/man/mosquitto_passwd-1.html",
 			"hostname": "rpi-mosquitto",
 			"image": "eclipse-mosquitto:latest",
 			"logo": "https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png",
@@ -1433,15 +1433,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Mosquitto/config",
+					"bind": "/share/Container/Mosquitto/config",
 					"container": "/mosquitto/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Mosquitto/data",
+					"bind": "/share/Container/Mosquitto/data",
 					"container": "/mosquitto/data"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Mosquitto/log",
+					"bind": "/share/Container/Mosquitto/log",
 					"container": "/mosquitto/log"
 				}
 			],
@@ -1466,7 +1466,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1484,15 +1484,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Emby",
+					"bind": "/share/Container/Emby",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/data/tvshows"
 				},
 				{
-					"bind": "/portainer/Movies",
+					"bind": "/share/mediat/Movies",
 					"container": "/data/movies"
 				}
 			],
@@ -1517,7 +1517,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/EmbyStat",
+					"bind": "/share/Container/EmbyStat",
 					"container": "/config"
 				}
 			]
@@ -1541,15 +1541,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/srv"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/filebrowser/filebrowser.db",
+					"bind": "/share/Container/filebrowser/filebrowser.db",
 					"container": "/database/filebrowser.db"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/filebrowser/settings.json",
+					"bind": "/share/Container/filebrowser/settings.json",
 					"container": "/config/settings.json"
 				}
 			]
@@ -1585,15 +1585,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/srv"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/filebrowser/filebrowser.db",
+					"bind": "/share/Container/filebrowser/filebrowser.db",
 					"container": "/database/filebrowser.db"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/filebrowser/settings.json",
+					"bind": "/share/Container/filebrowser/settings.json",
 					"container": "/config/settings.json"
 				}
 			]
@@ -1623,7 +1623,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Flame/data",
+					"bind": "/share/Container/Flame/data",
 					"container": "/app/data"
 				},
 				{
@@ -1656,7 +1656,7 @@
 					"name": "CAPTCHA_SOLVER"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -1713,7 +1713,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/foundryvtt",
+					"bind": "/share/Container/foundryvtt",
 					"container": "/data"
 				}
 			],
@@ -1748,7 +1748,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/freshrss",
+					"bind": "/share/Container/freshrss",
 					"container": "/config"
 				}
 			],
@@ -1785,7 +1785,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Gazee",
+					"bind": "/share/Container/Gazee",
 					"container": "/config"
 				},
 				{
@@ -1824,7 +1824,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Ghost",
+					"bind": "/share/Container/Ghost",
 					"container": "/var/lib/ghost/content"
 				}
 			],
@@ -1855,7 +1855,7 @@
 			"description": "A simple server for sending and receiving messages",
 			"env": [
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -1883,7 +1883,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/gotify",
+					"bind": "/share/Container/gotify",
 					"container": "/app/data"
 				}
 			]
@@ -1907,7 +1907,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "Timezone",
 					"name": "TZ"
 				}
@@ -1924,7 +1924,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Grocy",
+					"bind": "/share/Container/Grocy",
 					"container": "/config"
 				}
 			],
@@ -1949,7 +1949,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Guacamole",
+					"bind": "/share/Container/Guacamole",
 					"container": "/config"
 				}
 			]
@@ -1983,15 +1983,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Headphones",
+					"bind": "/share/Container/Headphones",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/Downloads"
 				},
 				{
-					"bind": "/portainer/Music",
+					"bind": "/share/mediat/Music",
 					"container": "/music"
 				}
 			],
@@ -2029,7 +2029,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Heimdall",
+					"bind": "/share/Container/Heimdall",
 					"container": "/config"
 				}
 			],
@@ -2071,11 +2071,11 @@
 					"container": "/var/run/docker.sock"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Homarr/configs",
+					"bind": "/share/Container/Homarr/configs",
 					"container": "/app/data/configs"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
+					"bind": "/share/Container/Homarr/icons",
 					"container": "/app/public/icons"
 				}
 			]
@@ -2112,11 +2112,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Homarr/configs",
+					"bind": "/share/Container/Homarr/configs",
 					"container": "/app/data/configs"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
+					"bind": "/share/Container/Homarr/icons",
 					"container": "/app/public/icons"
 				}
 			]
@@ -2135,7 +2135,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/HomeAssistant/assets",
+					"bind": "/share/Container/HomeAssistant/assets",
 					"container": "/config"
 				}
 			],
@@ -2168,7 +2168,7 @@
 					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -2185,7 +2185,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/homebridge",
+					"bind": "/share/Container/homebridge",
 					"container": "/homebridge"
 				}
 			]
@@ -2217,7 +2217,7 @@
 					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -2234,7 +2234,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/debian-homebridge",
+					"bind": "/share/Container/debian-homebridge",
 					"container": "/homebridge"
 				}
 			]
@@ -2256,7 +2256,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Homepage/",
+					"bind": "/share/Container/Homepage/",
 					"container": "/app/config"
 				},
 				{
@@ -2297,11 +2297,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Homer/assets",
+					"bind": "/share/Container/Homer/assets",
 					"container": "/www/assets"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Homer/config.yml",
+					"bind": "/share/Container/Homer/config.yml",
 					"container": "/www/config.yml"
 				}
 			]
@@ -2337,7 +2337,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/HTPCmanager",
+					"bind": "/share/Container/HTPCmanager",
 					"container": "/config"
 				}
 			],
@@ -2361,7 +2361,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/huginn",
+					"bind": "/share/Container/huginn",
 					"container": "/var/lib/mysql"
 				}
 			],
@@ -2372,7 +2372,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /portainer/Files/AppData/Config/Influxdb/config/influxdb.conf",
+			"description": "InfluxDB is an open source time series database for recording metrics, events, and analytics. You will need to add /share/Container/Influxdb/config/influxdb.conf",
 			"hostname": "rpi-influxdb1810",
 			"image": "influxdb:1.8.10",
 			"logo": "https://raw.githubusercontent.com/docker-library/docs/43d87118415bb75d7bb107683e79cd6d69186f67/influxdb/logo.png",
@@ -2386,11 +2386,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Influxdb/data",
+					"bind": "/share/Container/Influxdb/data",
 					"container": "/var/lib/influxdb"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Influxdb/config",
+					"bind": "/share/Container/Influxdb/config",
 					"container": "/var/lib/influxdb"
 				}
 			],
@@ -2425,7 +2425,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/iobrokerdata",
+					"bind": "/share/Container/iobrokerdata",
 					"container": "/opt/iobroker"
 				}
 			],
@@ -2461,11 +2461,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Jackett",
+					"bind": "/share/Container/Jackett",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -2506,11 +2506,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/JDownloader",
+					"bind": "/share/Container/JDownloader",
 					"container": "/opt/JDownloader/app/cfg"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/opt/JDownloader/Downloads"
 				}
 			],
@@ -2535,7 +2535,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -2553,15 +2553,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+					"bind": "/share/Container/Jelllyfin",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/data/tvshows"
 				},
 				{
-					"bind": "/portainer/Movies",
+					"bind": "/share/mediat/Movies",
 					"container": "/data/movies"
 				}
 			],
@@ -2589,11 +2589,11 @@
 			],
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Jelllyfin",
+					"bind": "/share/Container/Jelllyfin",
 					"container": "/jf"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/jfago",
+					"bind": "/share/Container/jfago",
 					"container": "/data"
 				},
 				{
@@ -2627,7 +2627,7 @@
 					"name": "LOG_LEVEL"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -2644,7 +2644,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Jellyseerr",
+					"bind": "/share/Container/Jellyseerr",
 					"container": "/app/config"
 				}
 			],
@@ -2681,7 +2681,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Kodi",
+					"bind": "/share/Container/Kodi",
 					"container": "/config/.kodi"
 				}
 			],
@@ -2705,11 +2705,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/komga/config",
+					"bind": "/share/Container/komga/config",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/komga/data",
+					"bind": "/share/Container/komga/data",
 					"container": "/data"
 				},
 				{
@@ -2826,7 +2826,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/LetsEncrypt",
+					"bind": "/share/Container/LetsEncrypt",
 					"container": "/config"
 				}
 			],
@@ -2850,7 +2850,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/libreddit",
+					"bind": "/share/Container/libreddit",
 					"container": "/config"
 				}
 			],
@@ -2886,7 +2886,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/LibreSpeed",
+					"bind": "/share/Container/LibreSpeed",
 					"container": "/config"
 				}
 			],
@@ -2922,15 +2922,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Lidarr",
+					"bind": "/share/Container/Lidarr",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/Music",
+					"bind": "/share/mediat/Music",
 					"container": "/music"
 				}
 			],
@@ -2993,7 +2993,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Lychee",
+					"bind": "/share/Container/Lychee",
 					"container": "/config"
 				},
 				{
@@ -3023,7 +3023,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -3110,7 +3110,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Mariadb",
+					"bind": "/share/Container/Mariadb",
 					"container": "/config"
 				}
 			],
@@ -3134,7 +3134,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -3192,7 +3192,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/mealie",
+					"bind": "/share/Container/mealie",
 					"container": "/app/data"
 				}
 			]
@@ -3227,15 +3227,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Medusa",
+					"bind": "/share/Container/Medusa",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/tv"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -3270,7 +3270,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -3302,7 +3302,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Minecraft-data",
+					"bind": "/share/Container/Minecraft-data",
 					"container": "/data"
 				}
 			],
@@ -3390,7 +3390,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/MinIO",
+					"bind": "/share/Container/MinIO",
 					"container": "/data"
 				}
 			],
@@ -3459,11 +3459,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Mstream",
+					"bind": "/share/Container/Mstream",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/music"
 				}
 			],
@@ -3488,7 +3488,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -3560,7 +3560,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/MusicBrainz",
+					"bind": "/share/Container/MusicBrainz",
 					"container": "/config"
 				},
 				{
@@ -3602,7 +3602,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Muximux",
+					"bind": "/share/Container/Muximux",
 					"container": "/config"
 				}
 			],
@@ -3638,11 +3638,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Mylar",
+					"bind": "/share/Container/Mylar",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
@@ -3675,7 +3675,7 @@
 					"name": "MYSQL_ROOT_PASSWORD"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -3692,7 +3692,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/MySQL",
+					"bind": "/share/Container/MySQL",
 					"container": "/var/lib/mysql"
 				}
 			],
@@ -3734,7 +3734,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/n8n",
+					"bind": "/share/Container/n8n",
 					"container": "/home/node/.n8n"
 				}
 			]
@@ -3770,11 +3770,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/netdata/netdataconfig",
+					"bind": "/share/Container/netdata/netdataconfig",
 					"container": "/etc/netdata"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/netdata/netdatalib",
+					"bind": "/share/Container/netdata/netdatalib",
 					"container": "/var/lib/netdata"
 				},
 				{
@@ -3820,7 +3820,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -3883,7 +3883,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/ncdata",
+					"bind": "/share/Container/ncdata",
 					"container": "/data"
 				}
 			]
@@ -3919,7 +3919,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Nginx",
+					"bind": "/share/Container/Nginx",
 					"container": "/config"
 				}
 			],
@@ -3943,7 +3943,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -4018,7 +4018,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -4068,7 +4068,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -4133,7 +4133,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -4152,11 +4152,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/data",
+					"bind": "/share/Container/nginx-proxy-manager/data",
 					"container": "/data"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/letsencrypt",
+					"bind": "/share/Container/nginx-proxy-manager/letsencrypt",
 					"container": "/etc/letsencrypt"
 				}
 			],
@@ -4180,7 +4180,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -4199,7 +4199,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager-v3/data",
+					"bind": "/share/Container/nginx-proxy-manager-v3/data",
 					"container": "/data"
 				}
 			],
@@ -4238,7 +4238,7 @@
 					"name": "NODE_RED_CREDENTIAL_SECRET"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -4342,11 +4342,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Nzbget",
+					"bind": "/share/Container/Nzbget",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -4383,11 +4383,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Nzbhydra2",
+					"bind": "/share/Container/Nzbhydra2",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -4424,7 +4424,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/OctoPrint",
+					"bind": "/share/Container/OctoPrint",
 					"container": "/octoprint"
 				},
 				{
@@ -4471,7 +4471,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Omada",
+					"bind": "/share/Container/Omada",
 					"container": "/config"
 				}
 			],
@@ -4509,7 +4509,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Ombi",
+					"bind": "/share/Container/Ombi",
 					"container": "/config"
 				}
 			],
@@ -4545,7 +4545,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Organizr",
+					"bind": "/share/Container/Organizr",
 					"container": "/config"
 				}
 			],
@@ -4581,7 +4581,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/OScam",
+					"bind": "/share/Container/OScam",
 					"container": "/config"
 				}
 			],
@@ -4606,7 +4606,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -4623,7 +4623,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Overseerr",
+					"bind": "/share/Container/Overseerr",
 					"container": "/config"
 				}
 			],
@@ -4650,10 +4650,10 @@
 					"description": "for GroupID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ",
-					"description": "Specify a timezone to use for example America/New_York"
+					"description": "Specify a timezone to use for example Europe/Helsinki"
 				},
 				{
 					"default": "",
@@ -4714,7 +4714,7 @@
 					"name": "PGADMIN_DEFAULT_PASSWORD"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -4731,7 +4731,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/pgAdmin",
+					"bind": "/share/Container/pgAdmin",
 					"container": "/var/lib/pgadmin"
 				}
 			],
@@ -4774,7 +4774,7 @@
 					"container": "/Thumbs"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/PhotoShow",
+					"bind": "/share/Container/PhotoShow",
 					"container": "/config"
 				}
 			],
@@ -4803,11 +4803,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole",
+					"bind": "/share/Container/PiHole",
 					"container": "/etc/pihole"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole/DNS",
+					"bind": "/share/Container/PiHole/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -4835,11 +4835,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT",
+					"bind": "/share/Container/PiHole_DoH-DoT",
 					"container": "/etc/pihole"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole_DoH-DoT/DNS",
+					"bind": "/share/Container/PiHole_DoH-DoT/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -4906,11 +4906,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole-Unbound",
+					"bind": "/share/Container/PiHole-Unbound",
 					"container": "/etc/pihole"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole-Unbound/DNS",
+					"bind": "/share/Container/PiHole-Unbound/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -4944,7 +4944,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/PiWigo",
+					"bind": "/share/Container/PiWigo",
 					"container": "/config"
 				}
 			],
@@ -4967,15 +4967,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/pixel-server/auth.cfg",
+					"bind": "/share/Container/pixel-server/auth.cfg",
 					"container": "/opt/pixel-server/auth.cfg"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/pixel-server/pixelserver.cfg",
+					"bind": "/share/Container/pixel-server/pixelserver.cfg",
 					"container": "/opt/pixel-server/pixelserver.cfg"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/pixel-server/users.cfg",
+					"bind": "/share/Container/pixel-server/users.cfg",
 					"container": "/opt/pixel-server/users.cfg"
 				},
 				{
@@ -5019,15 +5019,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Plex",
+					"bind": "/share/Container/Plex",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/tv"
 				},
 				{
-					"bind": "/portainer/Movies",
+					"bind": "/share/mediat/Movies",
 					"container": "/movies"
 				}
 			],
@@ -5056,7 +5056,7 @@
 					"name": "POSTGRES_PASSWORD"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -5073,7 +5073,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/PostgreSQL",
+					"bind": "/share/Container/PostgreSQL",
 					"container": "/var/lib/postgresql/data"
 				}
 			],
@@ -5116,7 +5116,7 @@
 					"container": "/srv/data"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/PrivateBin",
+					"bind": "/share/Container/PrivateBin",
 					"container": "/srv/cfg"
 				}
 			],
@@ -5158,7 +5158,7 @@
 					"container": "/data"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/ProjectSend",
+					"bind": "/share/Container/ProjectSend",
 					"container": "/config"
 				}
 			],
@@ -5181,7 +5181,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "Time Zone",
 					"name": "TZ"
 				}
@@ -5198,7 +5198,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/prowlarr",
+					"bind": "/share/Container/prowlarr",
 					"container": "/config"
 				}
 			],
@@ -5234,7 +5234,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Pydio",
+					"bind": "/share/Container/Pydio",
 					"container": "/config"
 				},
 				{
@@ -5275,11 +5275,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/qBittorrent",
+					"bind": "/share/Container/qBittorrent",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -5307,7 +5307,7 @@
 					"name": "UMASK"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -5331,11 +5331,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/qFlood",
+					"bind": "/share/Container/qFlood",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/app/qBittorrent/downloads"
 				}
 			]
@@ -5369,7 +5369,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Quassel-core",
+					"bind": "/share/Container/Quassel-core",
 					"container": "/config"
 				}
 			],
@@ -5405,15 +5405,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Radarr",
+					"bind": "/share/Container/Radarr",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/Movies",
+					"bind": "/share/mediat/Movies",
 					"container": "/movies"
 				}
 			],
@@ -5464,7 +5464,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				}
@@ -5481,7 +5481,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/RDesktop/config",
+					"bind": "/share/Container/RDesktop/config",
 					"container": "/config"
 				}
 			],
@@ -5505,7 +5505,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "Time Zone",
 					"name": "TZ"
 				}
@@ -5522,7 +5522,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/readarr",
+					"bind": "/share/Container/readarr",
 					"container": "/config"
 				},
 				{
@@ -5530,7 +5530,7 @@
 					"container": "/books"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/readarr/downloads",
+					"bind": "/share/Container/readarr/downloads",
 					"container": "/downloads"
 				}
 			],
@@ -5555,7 +5555,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -5633,14 +5633,14 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Resilio-Sync",
+					"bind": "/share/Container/Resilio-Sync",
 					"container": "/config"
 				},
 				{
 					"container": "/sync"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -5684,7 +5684,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/rustdesk",
+					"bind": "/share/Container/rustdesk",
 					"container": "/data"
 				}
 			]
@@ -5706,7 +5706,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -5768,15 +5768,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/ruTorrent/config",
+					"bind": "/share/Container/ruTorrent/config",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/ruTorrent/passwd",
+					"bind": "/share/Container/ruTorrent/passwd",
 					"container": "/passwd"
 				}
 			]
@@ -5811,15 +5811,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Sabnzbd",
+					"bind": "/share/Container/Sabnzbd",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/Downloads/incomplete",
+					"bind": "/share/lataukset/incomplete",
 					"container": "/incomplete-downloads"
 				}
 			],
@@ -5883,7 +5883,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/share"
 				}
 			],
@@ -5919,7 +5919,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/searxng",
+					"bind": "/share/Container/searxng",
 					"container": "/etc/searxng"
 				}
 			],
@@ -5943,7 +5943,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Shiori",
+					"bind": "/share/Container/Shiori",
 					"container": "/srv/shiori"
 				}
 			],
@@ -5979,15 +5979,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/SickChill",
+					"bind": "/share/Container/SickChill",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/tv"
 				}
 			],
@@ -6023,15 +6023,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/SickGear",
+					"bind": "/share/Container/SickGear",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/TV",
+					"bind": "/share/mediat/TV_Shows",
 					"container": "/tv"
 				},
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/downloads"
 				}
 			],
@@ -6066,7 +6066,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Smokeping",
+					"bind": "/share/Container/Smokeping",
 					"container": "/config"
 				},
 				{
@@ -6095,7 +6095,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Snippet-box",
+					"bind": "/share/Container/Snippet-box",
 					"container": "/app/data"
 				}
 			]
@@ -6126,7 +6126,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/speedtest-tracker",
+					"bind": "/share/Container/speedtest-tracker",
 					"container": "/config"
 				}
 			],
@@ -6178,7 +6178,7 @@
 			"command": "start --user ${SDB_USERNAME} --pass ${SDB_PASSWORD} file:/data/database.db",
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/surrealdb/data",
+					"bind": "/share/Container/surrealdb/data",
 					"container": "/data"
 				}
 			],
@@ -6221,7 +6221,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Syncthing",
+					"bind": "/share/Container/Syncthing",
 					"container": "/config"
 				},
 				{
@@ -6293,7 +6293,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/tailscale",
+					"bind": "/share/Container/tailscale",
 					"container": "/var/lib/tailscale"
 				},
 				{
@@ -6337,7 +6337,7 @@
 					"container": "/logs"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Tautulli",
+					"bind": "/share/Container/Tautulli",
 					"container": "/config"
 				}
 			],
@@ -6372,7 +6372,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/TheLounge",
+					"bind": "/share/Container/TheLounge",
 					"container": "/config"
 				}
 			],
@@ -6396,7 +6396,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/TiddlyWiki",
+					"bind": "/share/Container/TiddlyWiki",
 					"container": "/var/lib/tiddlywiki"
 				}
 			],
@@ -6424,15 +6424,15 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/traefik/traefik.yml",
+					"bind": "/share/Container/traefik/traefik.yml",
 					"container": "/traefik.yml"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/traefik/config.yml",
+					"bind": "/share/Container/traefik/config.yml",
 					"container": "/config.yml"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/traefik/acme.json",
+					"bind": "/share/Container/traefik/acme.json",
 					"container": "/acme.json"
 				},
 				{
@@ -6471,7 +6471,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Transmission",
+					"bind": "/share/Container/Transmission",
 					"container": "/config"
 				},
 				{
@@ -6549,7 +6549,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/data"
 				},
 				{
@@ -6623,7 +6623,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Downloads",
+					"bind": "/share/lataukset",
 					"container": "/data"
 				},
 				{
@@ -6663,7 +6663,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/TVHeadend",
+					"bind": "/share/Container/TVHeadend",
 					"container": "/config"
 				},
 				{
@@ -6756,7 +6756,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Unifi",
+					"bind": "/share/Container/Unifi",
 					"container": "/config"
 				}
 			],
@@ -6809,11 +6809,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/",
+					"bind": "/share/Container/UnifFiVideo/Recordings/",
 					"container": "/recordings"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/UniFiVideo/",
+					"bind": "/share/Container/UniFiVideo/",
 					"container": "/config"
 				}
 			],
@@ -6859,7 +6859,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/uptime-kuma",
+					"bind": "/share/Container/uptime-kuma",
 					"container": "/app/data"
 				}
 			]
@@ -6894,7 +6894,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/urbackup",
+					"bind": "/share/Container/urbackup",
 					"container": "/var/urbackup"
 				},
 				{
@@ -6924,7 +6924,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Bitwarden",
+					"bind": "/share/Container/Bitwarden",
 					"container": "/data"
 				}
 			]
@@ -6949,7 +6949,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -7053,7 +7053,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/WebGrabPlus",
+					"bind": "/share/Container/WebGrabPlus",
 					"container": "/config"
 				},
 				{
@@ -7081,7 +7081,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Whoogle",
+					"bind": "/share/Container/Whoogle",
 					"container": "/config"
 				}
 			],
@@ -7105,11 +7105,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Wikijs",
+					"bind": "/share/Container/Wikijs",
 					"container": "/config"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/Wikijs/data",
+					"bind": "/share/Container/Wikijs/data",
 					"container": "/data"
 				}
 			],
@@ -7259,7 +7259,7 @@
 					"description": "If you have changed the default API port don't forget to change it here too."
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -7305,7 +7305,7 @@
 					"name": "PGID"
 				},
 				{
-					"default": "America/New_York",
+					"default": "Europe/Helsinki",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -7375,7 +7375,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/YTDLM",
+					"bind": "/share/Container/YTDLM",
 					"container": "/app/appdata"
 				},
 				{
@@ -7426,7 +7426,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/ZNC",
+					"bind": "/share/Container/ZNC",
 					"container": "/config"
 				}
 			],
